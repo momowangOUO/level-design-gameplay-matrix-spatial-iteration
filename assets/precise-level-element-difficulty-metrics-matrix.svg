@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#fff"/>
+  <text x="64" y="74" font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif" font-size="48" font-weight="700" fill="#111">关卡元素标尺：体量 × 难度</text>
+  <line x1="64" y1="108" x2="1536" y2="108" stroke="#b01b6a" stroke-width="4"/>
+
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+    <!-- table -->
+    <g transform="translate(74 150)">
+      <rect x="0" y="0" width="900" height="420" fill="#fff" stroke="#777" stroke-width="3"/>
+      <rect x="180" y="0" width="240" height="72" fill="#91d050"/>
+      <rect x="420" y="0" width="240" height="72" fill="#ffd966"/>
+      <rect x="660" y="0" width="240" height="72" fill="#d97918"/>
+      <rect x="0" y="72" width="180" height="116" fill="#eeeeee"/>
+      <rect x="0" y="188" width="180" height="116" fill="#eeeeee"/>
+      <rect x="0" y="304" width="180" height="116" fill="#eeeeee"/>
+      <g stroke="#999" stroke-width="3">
+        <path d="M180 0V420 M420 0V420 M660 0V420 M0 72H900 M0 188H900 M0 304H900"/>
+      </g>
+      <g font-size="30" font-weight="700" fill="#111" text-anchor="middle">
+        <text x="300" y="47">简单</text>
+        <text x="540" y="47">中等</text>
+        <text x="780" y="47">困难</text>
+        <text x="90" y="135">小型</text>
+        <text x="90" y="251">中型</text>
+        <text x="90" y="367">大型</text>
+      </g>
+      <g font-size="24" fill="#111" text-anchor="middle">
+        <text x="300" y="120">1动作</text><text x="300" y="152">0-1敌</text>
+        <text x="540" y="120">1动作+变化</text><text x="540" y="152">少量敌</text>
+        <text x="780" y="120">时间压力</text><text x="780" y="152">快速重试</text>
+        <text x="300" y="236">2连续动作</text><text x="300" y="268">补给清楚</text>
+        <text x="540" y="236">2动作组合</text><text x="540" y="268">交叉压力</text>
+        <text x="780" y="236">资源压力</text><text x="780" y="268">25-40%失败</text>
+        <text x="300" y="352">主轴+支线</text><text x="300" y="384">低压探索</text>
+        <text x="540" y="352">多目标</text><text x="540" y="384">路线判断</text>
+        <text x="780" y="352">峰值段落</text><text x="780" y="384">高收益高压</text>
+      </g>
+    </g>
+
+    <!-- side room examples, exact small grids -->
+    <g transform="translate(1060 164)">
+      <text x="0" y="0" font-size="28" font-weight="700">小型/简单：2房间，1敌</text>
+      <rect x="0" y="32" width="380" height="112" fill="#f8dfc8" stroke="#111" stroke-width="4"/>
+      <line x1="190" y1="32" x2="190" y2="144" stroke="#111" stroke-width="4"/>
+      <rect x="-72" y="72" width="72" height="48" fill="#92d050" stroke="#111" stroke-width="4"/>
+      <text x="-36" y="104" font-size="20" text-anchor="middle" font-weight="700">ENTER</text>
+      <circle cx="112" cy="88" r="28" fill="#e33131"/>
+      <rect x="380" y="64" width="56" height="64" fill="#cfe2f3" stroke="#111" stroke-width="4"/>
+    </g>
+    <g transform="translate(1060 392)">
+      <text x="0" y="0" font-size="28" font-weight="700">中型/中等：3房间，3敌</text>
+      <rect x="0" y="32" width="456" height="168" fill="#f8dfc8" stroke="#111" stroke-width="4"/>
+      <line x1="152" y1="32" x2="152" y2="200" stroke="#111" stroke-width="4"/>
+      <line x1="304" y1="32" x2="304" y2="200" stroke="#111" stroke-width="4"/>
+      <rect x="-72" y="92" width="72" height="48" fill="#92d050" stroke="#111" stroke-width="4"/>
+      <text x="-36" y="124" font-size="20" text-anchor="middle" font-weight="700">ENTER</text>
+      <circle cx="80" cy="88" r="24" fill="#e33131"/>
+      <circle cx="232" cy="144" r="24" fill="#e33131"/>
+      <circle cx="384" cy="88" r="24" fill="#e33131"/>
+      <rect x="456" y="64" width="56" height="64" fill="#cfe2f3" stroke="#111" stroke-width="4"/>
+      <rect x="456" y="136" width="56" height="64" fill="#cfe2f3" stroke="#111" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

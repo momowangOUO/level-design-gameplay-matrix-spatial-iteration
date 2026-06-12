@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#fff"/>
+  <text x="64" y="74" font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif" font-size="50" font-weight="700" fill="#111">设计/规划关卡中的挑战：矩阵</text>
+  <line x1="64" y1="108" x2="1536" y2="108" stroke="#b01b6a" stroke-width="4"/>
+
+  <defs>
+    <g id="gridPanel">
+      <rect x="0" y="0" width="624" height="288" fill="#fff" stroke="#111" stroke-width="4"/>
+      <g stroke="#d7d7d7" stroke-width="2">
+        <path d="M48 0V288 M96 0V288 M144 0V288 M192 0V288 M240 0V288 M288 0V288 M336 0V288 M384 0V288 M432 0V288 M480 0V288 M528 0V288 M576 0V288"/>
+        <path d="M0 48H624 M0 96H624 M0 144H624 M0 192H624 M0 240H624"/>
+      </g>
+    </g>
+  </defs>
+
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif" font-size="28" font-weight="700" fill="#111">
+    <text x="86" y="152">纵向跳跃：简单（1格台阶）</text>
+    <g transform="translate(86 174)">
+      <use href="#gridPanel"/>
+      <rect x="0" y="240" width="624" height="48" fill="#000"/>
+      <rect x="240" y="192" width="48" height="48" fill="#000"/>
+      <rect x="48" y="192" width="48" height="48" fill="#14aee8" stroke="#111" stroke-width="2"/>
+    </g>
+
+    <text x="860" y="152">纵向跳跃：困难（4格高墙）</text>
+    <g transform="translate(860 174)">
+      <use href="#gridPanel"/>
+      <rect x="0" y="240" width="624" height="48" fill="#000"/>
+      <rect x="240" y="48" width="48" height="192" fill="#000"/>
+      <rect x="48" y="192" width="48" height="48" fill="#14aee8" stroke="#111" stroke-width="2"/>
+    </g>
+
+    <text x="86" y="520">组合挑战：简单（1格坑 + 低台）</text>
+    <g transform="translate(86 542)">
+      <use href="#gridPanel"/>
+      <rect x="0" y="240" width="144" height="48" fill="#000"/>
+      <rect x="192" y="192" width="192" height="96" fill="#000"/>
+      <rect x="432" y="240" width="192" height="48" fill="#000"/>
+      <rect x="48" y="192" width="48" height="48" fill="#14aee8" stroke="#111" stroke-width="2"/>
+      <text x="168" y="280" font-size="22" fill="#e87722" text-anchor="middle">1格坑</text>
+    </g>
+
+    <text x="860" y="520">组合挑战：困难（3格坑 + 高台）</text>
+    <g transform="translate(860 542)">
+      <use href="#gridPanel"/>
+      <rect x="0" y="240" width="144" height="48" fill="#000"/>
+      <rect x="288" y="96" width="336" height="192" fill="#000"/>
+      <rect x="48" y="192" width="48" height="48" fill="#14aee8" stroke="#111" stroke-width="2"/>
+      <text x="216" y="280" font-size="22" fill="#e87722" text-anchor="middle">3格坑</text>
+    </g>
+  </g>
+</svg>
