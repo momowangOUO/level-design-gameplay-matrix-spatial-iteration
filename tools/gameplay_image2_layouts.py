@@ -28,7 +28,7 @@ LAYOUTS = {
     },
     "precise-level-element-difficulty-metrics-matrix": {
         "text": "right_panel_compact",
-        "reason": "底图含表格和多个房间样本；说明外置，避免压住矩阵格。",
+        "reason": "底图含表格和多个房间样本；发布版在矩阵格内补代表性示例，说明外置避免压住房间样本。",
     },
     "precise-challenge-matrix-four-variations": {
         "text": "right_panel",
@@ -88,7 +88,7 @@ LAYOUTS = {
     },
     "five-beat-blockout-exercise": {
         "text": "right_panel_compact",
-        "reason": "练习工作表需要保留空白填写区，说明不能占用工作区。",
+        "reason": "练习工作表在发布版补入代表性填写样例和观测项，避免空框被读成漏标。",
     },
 }
 
@@ -196,11 +196,11 @@ EN_TEXT = {
         "title": "Gameplay Matrix Axes",
         "subtitle": "Place action, resistance, reward, feedback, and emotion in one table",
         "labels": [
-            ("Action Axis", "The verbs players repeatedly perform."),
-            ("Obstacle Axis", "Terrain, enemies, and resource pressure that change action."),
-            ("Reward Axis", "Signals where risk is worth taking."),
-            ("Feedback Axis", "Explains rules, failure, and success."),
-            ("Emotion Axis", "Teaching, practice, validation, and release shape experience."),
+            ("Action Axis", "Repeated core verb."),
+            ("Obstacle Axis", "Changes action condition."),
+            ("Reward Axis", "Guides risk value."),
+            ("Feedback Axis", "Explains success and failure."),
+            ("Emotion Axis", "Records pressure curve."),
         ],
     },
     "platform-world-1-2-progression": {

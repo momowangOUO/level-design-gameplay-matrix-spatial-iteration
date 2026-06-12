@@ -5,7 +5,7 @@ obstacle-action-relation,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callout
 pacing-emotion-curve,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,10,曲线和底部节奏标尺必须连续可读；文字不放在曲线峰谷上。 标注回填到底图预留框，未叠加额外网格。,PASS
 precise-metrics-dual-scale-overview,YES,YES,YES,1672x941,1672x941,40px,4,in_artwork_callouts,15,左右双标尺需要保留对照关系；右侧说明栏承载定义。 标注回填到底图预留框，未叠加额外网格。,PASS
 precise-character-ability-metrics-grid,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,5,跳弧、半径和网格是重点，说明不覆盖任何落点或角色框。 标注回填到底图预留框，未叠加额外网格。,PASS
-precise-level-element-difficulty-metrics-matrix,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,15,底图含表格和多个房间样本；说明外置，避免压住矩阵格。 标注回填到底图预留框，未叠加额外网格。,PASS
+precise-level-element-difficulty-metrics-matrix,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,15,底图含表格和多个房间样本；发布版在矩阵格内补代表性示例，说明外置避免压住房间样本。 标注回填到底图预留框，未叠加额外网格。,PASS
 precise-challenge-matrix-four-variations,YES,YES,YES,1672x941,1672x941,40px,4,in_artwork_callouts,4,四格平台对比要完整保留；文字放右栏对应四个变体。 标注回填到底图预留框，未叠加额外网格。,PASS
 precise-horizontal-jump-metrics-comparison,YES,YES,YES,1672x941,1672x941,40px,4,in_artwork_callouts,6,左右跳跃对照的安全区/风险区不能被标签遮挡。 标注回填到底图预留框，未叠加额外网格。,PASS
 gameplay-matrix-axes,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,6,矩阵本体需要足够大，文字只做外部轴线说明。 标注回填到底图预留框，未叠加额外网格。,PASS
@@ -20,4 +20,4 @@ blockout-level-layout,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,3
 telemetry-heatmap-matrix-writeback,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,12,热图与矩阵回写关系必须保持清楚，文字不覆盖热区。 标注回填到底图预留框，未叠加额外网格。,PASS
 genre-matrix-adaptation,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callouts,12,六类型卡片已经很密，说明作为外部图例。 标注回填到底图预留框，未叠加额外网格。,PASS
 level-design-pitfalls-correction-board,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callouts,6,诊断板含多个 before/after 案例，文字不放进案例格。 标注回填到底图预留框，未叠加额外网格。,PASS
-five-beat-blockout-exercise,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callouts,19,练习工作表需要保留空白填写区，说明不能占用工作区。 标注回填到底图预留框，未叠加额外网格。,PASS
+five-beat-blockout-exercise,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callouts,19,练习工作表在发布版补入代表性填写样例和观测项，避免空框被读成漏标。 标注回填到底图预留框，未叠加额外网格。,PASS

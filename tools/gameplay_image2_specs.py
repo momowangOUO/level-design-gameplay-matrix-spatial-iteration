@@ -214,11 +214,11 @@ icons for action, obstacle, resource, feedback, emotion, and beat order. Include
 around the table demonstrating how cells map to space. No letters or numbers; leave room for labels.
 """,
         "labels": [
-            ("动作轴", "玩家真正反复执行的动词。"),
-            ("障碍轴", "让动作发生变化的地形、敌人与资源压力。"),
-            ("奖励轴", "告诉玩家哪里值得冒险。"),
-            ("反馈轴", "让玩家知道规则、失败和成功原因。"),
-            ("情绪轴", "教学、练习、验证、释放形成体验曲线。"),
+            ("动作轴", "反复执行的核心动词。"),
+            ("障碍轴", "改变动作条件。"),
+            ("奖励轴", "引导冒险价值。"),
+            ("反馈轴", "解释成败原因。"),
+            ("情绪轴", "记录压力曲线。"),
         ],
     },
     {

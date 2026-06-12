@@ -209,6 +209,165 @@ def draw_annotation(
     draw_text_fit(draw, text_box, title, body, color, lang)
 
 
+def draw_fit_line(
+    draw: ImageDraw.ImageDraw,
+    box: tuple[int, int, int, int],
+    text: str,
+    color: tuple[int, int, int] = (30, 41, 59),
+    bold: bool = False,
+    max_size: int = 15,
+    min_size: int = 9,
+    anchor: str = "la",
+) -> None:
+    x1, y1, x2, y2 = box
+    for size in range(max_size, min_size - 1, -1):
+        fnt = font(size, bold)
+        if text_width(draw, text, fnt) <= max(8, x2 - x1):
+            break
+    else:
+        fnt = font(min_size, bold)
+    if anchor == "mm":
+        tw = text_width(draw, text, fnt)
+        draw.text((x1 + (x2 - x1 - tw) / 2, y1 + (y2 - y1 - fnt.size) / 2 - 1), text, fill=color, font=fnt)
+    else:
+        draw.text((x1, y1), text, fill=color, font=fnt)
+
+
+def draw_matrix_cell(
+    draw: ImageDraw.ImageDraw,
+    cx: int,
+    cy: int,
+    text: str,
+    color: tuple[int, int, int] = (51, 65, 85),
+) -> None:
+    if not text:
+        return
+    draw.rounded_rectangle((cx - 25, cy - 10, cx + 25, cy + 10), radius=5, fill=(255, 255, 255, 210))
+    draw_fit_line(draw, (cx - 23, cy - 9, cx + 23, cy + 9), text, color=color, bold=True, max_size=13, min_size=9, anchor="mm")
+
+
+def draw_publish_overlays(draw: ImageDraw.ImageDraw, stem: str, lang: str) -> None:
+    """Fill image2 classroom blanks that would otherwise read as empty labels in GitHub."""
+    if stem == "five-beat-blockout-exercise":
+        beat_xs = [30, 380, 710, 1041, 1362]
+        colors = PALETTE[:5]
+        zh_items = [
+            ["动作: 短跳", "障碍: 1格坑", "奖励: 旗帜", "反馈: 落点清楚"],
+            ["动作: 连续跳", "障碍: 低尖刺", "奖励: 补给", "反馈: 节奏稳定"],
+            ["动作: 变向跳", "障碍: 移动平台", "奖励: 星星", "反馈: 新条件"],
+            ["动作: 组合执行", "障碍: 敌人+机关", "奖励: 治疗", "反馈: 死亡热区"],
+            ["动作: 收束前进", "障碍: 低压力", "奖励: 出口门", "反馈: 节奏下降"],
+        ]
+        en_items = [
+            ["Act: short jump", "Obs: 1u gap", "Reward: flag", "Feedback: clear landing"],
+            ["Act: repeat jump", "Obs: low spikes", "Reward: supply", "Feedback: stable rhythm"],
+            ["Act: vary jump", "Obs: moving platform", "Reward: star", "Feedback: new condition"],
+            ["Act: combine", "Obs: enemy + switch", "Reward: health", "Feedback: death hotspot"],
+            ["Act: close route", "Obs: low pressure", "Reward: exit door", "Feedback: pressure down"],
+        ]
+        items = zh_items if lang == "zh" else en_items
+        for col, x in enumerate(beat_xs):
+            for row, line in enumerate(items[col]):
+                y = 393 + row * 24
+                draw_fit_line(draw, (x + 34, y, x + 295, y + 18), line, color=colors[col], max_size=14 if lang == "zh" else 12)
+        observations = (
+            ["观测: 能否看见目标", "观测: 是否稳定通过", "观测: 是否理解变奏", "观测: 死亡是否集中", "观测: 是否自然回收"]
+            if lang == "zh"
+            else ["Observe: goal visible", "Observe: stable pass", "Observe: variation clear", "Observe: deaths clustered", "Observe: natural closure"]
+        )
+        for col, x in enumerate(beat_xs):
+            draw_fit_line(draw, (x + 18, 584, x + 292, 610), observations[col], color=colors[col], bold=True, max_size=15 if lang == "zh" else 12, anchor="mm")
+
+        table_zh = [
+            ["短跳", "低", "-", "旗帜", "可见", "-"],
+            ["连续", "低", "补", "箱", "-", "-"],
+            ["变向", "中", "-", "星", "-", "-"],
+            ["组合", "高", "补", "验证", "-", "锁"],
+            ["收束", "低", "补", "门", "出口", "开"],
+        ]
+        table_en = [
+            ["Jump", "Low", "-", "Flag", "Seen", "-"],
+            ["Repeat", "Low", "HP", "Box", "-", "-"],
+            ["Vary", "Mid", "-", "Star", "-", "-"],
+            ["Combo", "High", "HP", "Check", "-", "Lock"],
+            ["Close", "Low", "HP", "Door", "Exit", "Open"],
+        ]
+        table = table_zh if lang == "zh" else table_en
+        cell_xs = [388, 458, 528, 598, 668, 738]
+        cell_ys = [704, 736, 768, 800, 832]
+        for r, row in enumerate(table):
+            for c, value in enumerate(row):
+                if value != "-":
+                    draw_matrix_cell(draw, cell_xs[c], cell_ys[r], value, colors[r])
+
+        notes = (
+            ["B03 停留高 -> 提前露出落点", "B04 死亡高 -> 增加安全窗", "B05 回收长 -> 缩短出口线"]
+            if lang == "zh"
+            else ["B03 dwell high -> preview landing", "B04 deaths high -> add safety window", "B05 cleanup long -> shorten exit"]
+        )
+        for i, note in enumerate(notes):
+            draw_fit_line(draw, (812, 722 + i * 33, 1158, 746 + i * 33), note, color=(30, 41, 59), max_size=17 if lang == "zh" else 13)
+
+    elif stem == "precise-level-element-difficulty-metrics-matrix":
+        headers = ["宽度", "路线", "敌人", "奖励", "视线", "资源"] if lang == "zh" else ["Width", "Route", "Enemy", "Reward", "Sight", "Supply"]
+        x_centers = [126, 198, 270, 342, 414, 486]
+        for x, label in zip(x_centers, headers):
+            draw_fit_line(draw, (x - 32, 84, x + 32, 112), label, color=(255, 255, 255), bold=True, max_size=14 if lang == "zh" else 11, anchor="mm")
+        rows_zh = [
+            ["1格", "直", "-", "-", "遮", "-"],
+            ["2格", "直", "低", "近", "中", "少"],
+            ["3路", "绕", "中", "中", "长", "中"],
+            ["-", "夹", "高", "-", "扇", "-"],
+            ["-", "支", "中", "远", "露", "高"],
+            ["-", "弯", "低", "近", "断", "-"],
+            ["-", "支", "中", "近", "露", "密"],
+        ]
+        rows_en = [
+            ["1u", "Direct", "-", "-", "Cover", "-"],
+            ["2u", "Line", "Low", "Near", "Mid", "Few"],
+            ["3r", "Loop", "Mid", "Mid", "Long", "Mid"],
+            ["-", "Pinch", "High", "-", "Cone", "-"],
+            ["-", "Branch", "Mid", "Far", "Open", "High"],
+            ["-", "Bend", "Low", "Near", "Break", "-"],
+            ["-", "Branch", "Mid", "Near", "Open", "Dense"],
+        ]
+        rows = rows_zh if lang == "zh" else rows_en
+        y_centers = [140, 174, 208, 242, 276, 310, 344]
+        row_colors = [(37, 99, 235), (20, 184, 166), (22, 163, 74), (220, 38, 38), (202, 138, 4), (124, 58, 237), (234, 88, 12)]
+        for r, row in enumerate(rows):
+            for c, value in enumerate(row):
+                if value != "-":
+                    draw_fit_line(draw, (x_centers[c] - 30, y_centers[r] - 11, x_centers[c] + 30, y_centers[r] + 11), value, color=row_colors[r], bold=True, max_size=13 if lang == "zh" else 10, anchor="mm")
+
+    elif stem == "level-design-pitfalls-correction-board":
+        labels = (
+            [("问题图", (48, 846, 104, 866), (220, 38, 38)), ("修正图", (48, 882, 104, 902), (22, 163, 74)),
+             ("症状", (144, 846, 214, 866), (37, 99, 235)), ("原因", (144, 882, 214, 902), (71, 85, 105)),
+             ("低", (278, 851, 304, 870), (37, 99, 235)), ("高", (392, 851, 418, 870), (220, 38, 38)),
+             ("问题密度", (316, 883, 404, 902), (71, 85, 105)),
+             ("图例: 动作 / 风险 / 补给 / 奖励 / 出口 / 门锁 / 证据", (514, 862, 1002, 886), (51, 65, 85))]
+            if lang == "zh"
+            else [("Issue", (48, 846, 104, 866), (220, 38, 38)), ("Fix", (48, 882, 104, 902), (22, 163, 74)),
+                  ("Symptom", (144, 846, 214, 866), (37, 99, 235)), ("Cause", (144, 882, 214, 902), (71, 85, 105)),
+                  ("Low", (278, 851, 304, 870), (37, 99, 235)), ("High", (392, 851, 418, 870), (220, 38, 38)),
+                  ("Density", (316, 883, 404, 902), (71, 85, 105)),
+                  ("Legend: action / risk / supply / reward / exit / lock / evidence", (514, 862, 1002, 886), (51, 65, 85))]
+        )
+        for text, box, color in labels:
+            draw_fit_line(draw, box, text, color=color, bold=True, max_size=16 if lang == "zh" else 12, anchor="mm")
+
+    elif stem == "telemetry-heatmap-matrix-writeback":
+        labels = (
+            [("死亡", (184, 600, 236, 624), (220, 38, 38)), ("停留", (432, 600, 484, 624), (202, 138, 4)),
+             ("绕路", (670, 600, 722, 624), (124, 58, 237)), ("样本线", (852, 600, 914, 624), (71, 85, 105))]
+            if lang == "zh"
+            else [("Death", (184, 600, 236, 624), (220, 38, 38)), ("Dwell", (432, 600, 484, 624), (202, 138, 4)),
+                  ("Detour", (670, 600, 722, 624), (124, 58, 237)), ("Sample", (852, 600, 914, 624), (71, 85, 105))]
+        )
+        for text, box, color in labels:
+            draw_fit_line(draw, box, text, color=color, bold=True, max_size=15 if lang == "zh" else 11, anchor="mm")
+
+
 def text_for(spec: dict, lang: str) -> dict:
     if lang == "en":
         return EN_TEXT[spec["stem"]]
@@ -238,6 +397,8 @@ def composite(spec: dict, lang: str) -> Path | None:
     for extra_i, (box, zh_text, en_text) in enumerate(EXTRA_CALLOUTS.get(spec["stem"], []), start=len(boxes)):
         title, body = zh_text if lang == "zh" else en_text
         draw_annotation(draw, box, title, body, extra_i, lang, show_badge=False)
+
+    draw_publish_overlays(draw, spec["stem"], lang)
 
     out_dir = EN_ASSET_DIR if lang == "en" else ASSET_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
