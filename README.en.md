@@ -11,11 +11,9 @@ This article focuses on three types of tools:
 - **Gameplay Matrix / teaching matrix**: Clarifies the core skill, player action, obstacle, reward, feedback, and intended emotion for each level segment.
 - **Blockout / Gray box diagram**: Drop each cell in the matrix onto the space and write it back through test data.
 
-Image description: The document uses local previewable assets and keeps one `image2://` annotation per figure. The final PNGs use high-density image2-generated base artwork with precise local Chinese titles, labels, legends, reading-order overlays, and a 40px reference grid. For grid spacing, jump distance, wall height, room volume, and skill radius, treat the written metrics, overlays, and reference grid as authoritative; the base artwork supplies representative examples and icon density, not random hard measurements.
+Image description: The document uses local previewable PNG assets. The final English PNGs use high-density image2-generated base artwork with dedicated outer text panels, English titles and labels, reading-order notes, and a 40px reference grid. For grid spacing, jump distance, wall height, room volume, and skill radius, treat the written metrics, outer annotations, and reference grid as authoritative; the base artwork supplies representative examples and icon density, not random hard measurements.
 
-![Schematic diagram - overall structure of the textbook](assets/level-design-curriculum-overview.png)
-
-image2 annotation: `image2://level_design_curriculum_overview`
+![Schematic diagram - overall structure of the textbook](assets/en/level-design-curriculum-overview.png)
 
 | Image elements | design description |
 |---|---|
@@ -45,9 +43,7 @@ The gameplay is not "what's in the map", but the cycle of actions that the playe
 
 Observe the target -> Perform the action -> Encounter resistance -> Get feedback -> Adjust strategy -> Keep moving forward
 
-![Schematic diagram - core loop of gameplay](assets/core-gameplay-loop-diagram.png)
-
-image2 annotation: `image2://core_gameplay_loop_diagram`
+![Schematic diagram - core loop of gameplay](assets/en/core-gameplay-loop-diagram.png)
 
 | Image elements | design description |
 |---|---|
@@ -83,9 +79,7 @@ An action is suitable for entering the matrix, usually meeting three points:
 
 Enemies aren't just a source of damage, and obstacles aren't just in the way. Their function is to change the player's actions and allow the player to learn some kind of judgment.
 
-![Schematic - how obstacles change player actions](assets/obstacle-action-relation.png)
-
-image2 annotation: `image2://obstacle_action_relation`
+![Schematic - how obstacles change player actions](assets/en/obstacle-action-relation.png)
 
 | Image elements | design description |
 |---|---|
@@ -99,9 +93,7 @@ image2 annotation: `image2://obstacle_action_relation`
 
 Resources are not just rewards. Resources also tell players "where is worth going, when to take risks, and when to rest." Rhythm determines how these rewards and pressures are sequenced.
 
-![Schematic - Rhythm and Mood Curve](assets/pacing-emotion-curve.png)
-
-image2 annotation: `image2://pacing_emotion_curve`
+![Schematic - Rhythm and Mood Curve](assets/en/pacing-emotion-curve.png)
 
 | Image elements | design description |
 |---|---|
@@ -121,9 +113,7 @@ In this section, we need to first establish two sets of rulers: the character ab
 
 ### Metric/Scale Overview: Character Ability Scale + Level Element Scale
 
-![Schematic - Overview of metric rulers](assets/precise-metrics-dual-scale-overview.png)
-
-image2 annotation: `image2://metrics_dual_scale_overview`
+![Schematic - Overview of metric rulers](assets/en/precise-metrics-dual-scale-overview.png)
 
 | Image elements | design description |
 |---|---|
@@ -145,9 +135,7 @@ How to use:
 
 ### Character ability scale: body, speed, jump, skill radius
 
-![Schematic - Character Ability Scale Grid](assets/precise-character-ability-metrics-grid.png)
-
-image2 annotation: `image2://character_ability_metrics_grid`
+![Schematic - Character Ability Scale Grid](assets/en/precise-character-ability-metrics-grid.png)
 
 | Image elements | design description |
 |---|---|
@@ -172,9 +160,7 @@ Operation suggestion: Before drawing the first blockout, novices should copy thi
 
 ### Level element ruler: size, difficulty, enemies, resources
 
-![Schematic - level element volume and difficulty scale](assets/precise-level-element-difficulty-metrics-matrix.png)
-
-image2 annotation: `image2://level_element_difficulty_metrics_matrix`
+![Schematic - level element volume and difficulty scale](assets/en/precise-level-element-difficulty-metrics-matrix.png)
 
 | Image elements | design description |
 |---|---|
@@ -195,9 +181,7 @@ The level element ruler puts the planning matrix and space map together. When us
 
 ### Challenge Matrix Scale: Four variations of the same skill
 
-![Schematic - Challenge Matrix Four Cell Variant](assets/precise-challenge-matrix-four-variations.png)
-
-image2 annotation: `image2://challenge_matrix_four_variations`
+![Schematic - Challenge Matrix Four Cell Variant](assets/en/precise-challenge-matrix-four-variations.png)
 
 | Image elements | design description |
 |---|---|
@@ -218,9 +202,7 @@ How to read the four-square challenge:
 
 ### Horizontal jump ruler: The same is a pit, the width is the difference in teaching
 
-![Diagram - Simple vs. difficult sideways jump](assets/precise-horizontal-jump-metrics-comparison.png)
-
-image2 annotation: `image2://horizontal_jump_metrics_comparison`
+![Diagram - Simple vs. difficult sideways jump](assets/en/precise-horizontal-jump-metrics-comparison.png)
 
 | Image elements | design description |
 |---|---|
@@ -256,9 +238,7 @@ If you continue to use image2 to generate similar images in the future, this inf
 
 Matrix is ​​a table that intersects multiple dimensions; Gameplay Matrix is ​​a table that binds "what the player knows, does, encounters, gets, and feels" to the level process.
 
-![Schematic - Gameplay Matrix axis structure](assets/gameplay-matrix-axes.png)
-
-image2 annotation: `image2://gameplay_matrix_axes`
+![Schematic - Gameplay Matrix axis structure](assets/en/gameplay-matrix-axes.png)
 
 | Image elements | design description |
 |---|---|
@@ -299,9 +279,7 @@ The following example is not for you to copy, but to show how the matrix can be 
 
 ### Example 1: Platform action basic jump five steps
 
-![Schematic - Platform action level progression](assets/platform-world-1-2-progression.png)
-
-image2 annotation: `image2://platform_world_1_2_progression`
+![Schematic - Platform action level progression](assets/en/platform-world-1-2-progression.png)
 
 | Image elements | design description |
 |---|---|
@@ -321,9 +299,7 @@ image2 annotation: `image2://platform_world_1_2_progression`
 
 #### Synchronized Space Sketch
 
-![Schematic - Platform Action Blockout Sketch](assets/platform-world-1-2-blockout.png)
-
-image2 annotation: `image2://platform_world_1_2_blockout`
+![Schematic - Platform Action Blockout Sketch](assets/en/platform-world-1-2-blockout.png)
 
 | Image elements | design description |
 |---|---|
@@ -335,9 +311,7 @@ image2 annotation: `image2://platform_world_1_2_blockout`
 
 ### Example 2: "Observation -> Action -> Feedback" matrix for a puzzle level
 
-![Schematic - Puzzle Teaching Arc](assets/portal-fling-tutorial-arc.png)
-
-image2 annotation: `image2://portal_fling_tutorial_arc`
+![Schematic - Puzzle Teaching Arc](assets/en/portal-fling-tutorial-arc.png)
 
 | Image elements | design description |
 |---|---|
@@ -357,9 +331,7 @@ image2 annotation: `image2://portal_fling_tutorial_arc`
 
 #### Synchronized Space Sketch
 
-![Schematic - Blockout](assets/portal-fling-room-blockout.png)
-
-image2 annotation: `image2://portal_fling_room_blockout`
+![Schematic - Blockout](assets/en/portal-fling-room-blockout.png)
 
 | Image elements | design description |
 |---|---|
@@ -371,9 +343,7 @@ image2 annotation: `image2://portal_fling_room_blockout`
 
 ### Example 3: Rhythm Matrix for Shooting Encounters
 
-![Schematic - Shooting Arena Encounter Layout](assets/doom-arena-encounter-layout.png)
-
-image2 annotation: `image2://doom_arena_encounter_layout`
+![Schematic - Shooting Arena Encounter Layout](assets/en/doom-arena-encounter-layout.png)
 
 | Image elements | design description |
 |---|---|
@@ -393,9 +363,7 @@ image2 annotation: `image2://doom_arena_encounter_layout`
 
 ### Example 4: Cooperation and multi-role matrix
 
-![Schematic - Cooperation Level Role Responsibility Matrix](assets/coop-role-responsibility-matrix.png)
-
-image2 annotation: `image2://coop_role_responsibility_matrix`
+![Schematic - Cooperation Level Role Responsibility Matrix](assets/en/coop-role-responsibility-matrix.png)
 
 | Image elements | design description |
 |---|---|
@@ -419,9 +387,7 @@ image2 annotation: `image2://coop_role_responsibility_matrix`
 
 Level design is not written all at once, but turns from hypothesis to experience.
 
-![Schematic - Level Design Iteration Closed Loop](assets/level-design-iteration-loop.png)
-
-image2 annotation: `image2://level_design_iteration_loop`
+![Schematic - Level Design Iteration Closed Loop](assets/en/level-design-iteration-loop.png)
 
 | Image elements | design description |
 |---|---|
@@ -441,9 +407,7 @@ image2 annotation: `image2://level_design_iteration_loop`
 
 ### From matrix to blockout
 
-![Schematic - Blockout level layout](assets/blockout-level-layout.png)
-
-image2 annotation: `image2://blockout_level_layout`
+![Schematic - Blockout level layout](assets/en/blockout-level-layout.png)
 
 | Image elements | design description |
 |---|---|
@@ -469,9 +433,7 @@ Blockout Checklist:
 
 The matrix does not end when it is written. Each cell should be able to be turned into a test hypothesis.
 
-![Schematic - Telemetry Heatmap with Matrix Writeback](assets/telemetry-heatmap-matrix-writeback.png)
-
-image2 annotation: `image2://telemetry_heatmap_matrix_writeback`
+![Schematic - Telemetry Heatmap with Matrix Writeback](assets/en/telemetry-heatmap-matrix-writeback.png)
 
 | Image elements | design description |
 |---|---|
@@ -510,9 +472,7 @@ image2 annotation: `image2://telemetry_heatmap_matrix_writeback`
 
 Matrix methods are not specific to any type. Different types simply replace core verbs, scale units, obstacle forms, and verification indicators.
 
-![Schematic diagram - matrix adaptation for different types of levels](assets/genre-matrix-adaptation.png)
-
-image2 annotation: `image2://genre_matrix_adaptation`
+![Schematic diagram - matrix adaptation for different types of levels](assets/en/genre-matrix-adaptation.png)
 
 | Image elements | design description |
 |---|---|
@@ -533,9 +493,7 @@ image2 annotation: `image2://genre_matrix_adaptation`
 
 ## Common design pitfalls and correction strategies
 
-![Diagram – Common Pitfalls and Correction Strategies](assets/level-design-pitfalls-correction-board.png)
-
-image2 annotation: `image2://level_design_pitfalls_correction_board`
+![Diagram – Common Pitfalls and Correction Strategies](assets/en/level-design-pitfalls-correction-board.png)
 
 | Image elements | design description |
 |---|---|
@@ -568,7 +526,7 @@ It is recommended to import it into Excel, Google Sheets, Airtable or a project 
 | Record_Type | `Progression` represents the design process grid, `Validation` represents the test write-back grid |
 | Level_ID | Level or room number |
 | Beat_ID | Node number must correspond to blockout |
-| Diagram_ID | Corresponds to `image2://` image ID |
+| Diagram_ID | Corresponds to the local diagram slug |
 | Core_Play_Skill | Core gameplay/skills |
 | Player_Action | Player actions/operations |
 | Enemy_Obstacle | obstacle or enemy |
@@ -614,9 +572,7 @@ Check three things: Are there beats testing skills the player hasn’t learned y
 
 Mark the five beats from Exercise 1 on the gray box plot. Each beat is marked with at least the entrance, exit, first sight target, obstacle location, reward location, and failed recovery route.
 
-![Diagram - Five-stage Blockout for practice](assets/five-beat-blockout-exercise.png)
-
-image2 annotation: `image2://five_beat_blockout_exercise`
+![Diagram - Five-stage Blockout for practice](assets/en/five-beat-blockout-exercise.png)
 
 | Image elements | design description |
 |---|---|

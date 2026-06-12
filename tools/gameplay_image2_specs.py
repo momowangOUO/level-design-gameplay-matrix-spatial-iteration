@@ -457,13 +457,12 @@ mini greybox room with entrance, obstacle, reward, exit, route arrows, hazard ic
 areas. Include a small checklist area, evidence icons, and a final writeback arrow. No text/numbers.
 """,
         "labels": [
-            ("1 引入", "只放一个新规则，让玩家安全理解。"),
-            ("2 练习", "重复核心动作，保持失败代价低。"),
-            ("3 变奏", "改变空间条件，不改变核心规则。"),
-            ("4 验证", "组合前面学过的内容，提高压力。"),
-            ("5 释放", "给出口、奖励或低压空间收束。"),
+            ("引入", "只放一个新规则，让玩家安全理解。"),
+            ("练习", "重复核心动作，保持失败代价低。"),
+            ("变奏", "改变空间条件，不改变核心规则。"),
+            ("验证", "组合前面学过的内容，提高压力。"),
+            ("释放", "给出口、奖励或低压空间收束。"),
             ("检查", "每段都要有动作、障碍、奖励、反馈和情绪目标。"),
         ],
     },
 ]
-

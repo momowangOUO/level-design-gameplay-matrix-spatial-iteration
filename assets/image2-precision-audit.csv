@@ -1,23 +1,23 @@
-﻿Diagram,Image2BaseExists,FinalPngExists,FinalSize,ReferenceGrid,OverlayLabels,Status
-level-design-curriculum-overview,YES,YES,1600x900,40px,5,PASS
-core-gameplay-loop-diagram,YES,YES,1600x900,40px,6,PASS
-obstacle-action-relation,YES,YES,1600x900,40px,6,PASS
-pacing-emotion-curve,YES,YES,1600x900,40px,5,PASS
-precise-metrics-dual-scale-overview,YES,YES,1600x900,40px,4,PASS
-precise-character-ability-metrics-grid,YES,YES,1600x900,40px,5,PASS
-precise-level-element-difficulty-metrics-matrix,YES,YES,1600x900,40px,5,PASS
-precise-challenge-matrix-four-variations,YES,YES,1600x900,40px,4,PASS
-precise-horizontal-jump-metrics-comparison,YES,YES,1600x900,40px,4,PASS
-gameplay-matrix-axes,YES,YES,1600x900,40px,5,PASS
-platform-world-1-2-progression,YES,YES,1600x900,40px,5,PASS
-platform-world-1-2-blockout,YES,YES,1600x900,40px,5,PASS
-portal-fling-tutorial-arc,YES,YES,1600x900,40px,5,PASS
-portal-fling-room-blockout,YES,YES,1600x900,40px,5,PASS
-doom-arena-encounter-layout,YES,YES,1600x900,40px,5,PASS
-coop-role-responsibility-matrix,YES,YES,1600x900,40px,5,PASS
-level-design-iteration-loop,YES,YES,1600x900,40px,6,PASS
-blockout-level-layout,YES,YES,1600x900,40px,5,PASS
-telemetry-heatmap-matrix-writeback,YES,YES,1600x900,40px,5,PASS
-genre-matrix-adaptation,YES,YES,1600x900,40px,6,PASS
-level-design-pitfalls-correction-board,YES,YES,1600x900,40px,6,PASS
-five-beat-blockout-exercise,YES,YES,1600x900,40px,6,PASS
+﻿Diagram,Image2BaseExists,ChinesePngExists,EnglishPngExists,ChineseSize,EnglishSize,ReferenceGrid,OverlayLabels,TextPlacement,CalloutBoxes,PlacementReason,Status
+level-design-curriculum-overview,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,10,底图是流程总览，主体横向信息多；文字放右栏，避免压住流程节点和图标组。 标注回填到底图预留框，未叠加额外网格。,PASS
+core-gameplay-loop-diagram,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callouts,6,底图中心房间和循环箭头都需要保持完整；文字全部外置，避免遮挡核心循环。 标注回填到底图预留框，未叠加额外网格。,PASS
+obstacle-action-relation,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callouts,6,底图为六宫格样本板，任何浮动标签都会压住案例；右侧紧凑编号说明最稳。 标注回填到底图预留框，未叠加额外网格。,PASS
+pacing-emotion-curve,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,10,曲线和底部节奏标尺必须连续可读；文字不放在曲线峰谷上。 标注回填到底图预留框，未叠加额外网格。,PASS
+precise-metrics-dual-scale-overview,YES,YES,YES,1672x941,1672x941,40px,4,in_artwork_callouts,15,左右双标尺需要保留对照关系；右侧说明栏承载定义。 标注回填到底图预留框，未叠加额外网格。,PASS
+precise-character-ability-metrics-grid,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,5,跳弧、半径和网格是重点，说明不覆盖任何落点或角色框。 标注回填到底图预留框，未叠加额外网格。,PASS
+precise-level-element-difficulty-metrics-matrix,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,15,底图含表格和多个房间样本；说明外置，避免压住矩阵格。 标注回填到底图预留框，未叠加额外网格。,PASS
+precise-challenge-matrix-four-variations,YES,YES,YES,1672x941,1672x941,40px,4,in_artwork_callouts,4,四格平台对比要完整保留；文字放右栏对应四个变体。 标注回填到底图预留框，未叠加额外网格。,PASS
+precise-horizontal-jump-metrics-comparison,YES,YES,YES,1672x941,1672x941,40px,4,in_artwork_callouts,6,左右跳跃对照的安全区/风险区不能被标签遮挡。 标注回填到底图预留框，未叠加额外网格。,PASS
+gameplay-matrix-axes,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,6,矩阵本体需要足够大，文字只做外部轴线说明。 标注回填到底图预留框，未叠加额外网格。,PASS
+platform-world-1-2-progression,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,10,横向关卡进程很长，标签不放在平台路径上。 标注回填到底图预留框，未叠加额外网格。,PASS
+platform-world-1-2-blockout,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,10,灰盒路径、支路和验证段都在图面内，说明外置。 标注回填到底图预留框，未叠加额外网格。,PASS
+portal-fling-tutorial-arc,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,5,五个解谜房间面板需要连续阅读，文字不插入面板之间。 标注回填到底图预留框，未叠加额外网格。,PASS
+portal-fling-room-blockout,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,10,单房间的视线、Portal 面和轨迹弧线是重点，说明外置。 标注回填到底图预留框，未叠加额外网格。,PASS
+doom-arena-encounter-layout,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,29,竞技场火力锥、环线和资源点不能被文字覆盖。 标注回填到底图预留框，未叠加额外网格。,PASS
+coop-role-responsibility-matrix,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,8,合作路线、责任区和同步机关需要完整显示。 标注回填到底图预留框，未叠加额外网格。,PASS
+level-design-iteration-loop,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callouts,7,底图包含多张工件缩略图，说明卡不压缩到图面内。 标注回填到底图预留框，未叠加额外网格。,PASS
+blockout-level-layout,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,32,总 blockout 信息量最高，文字只能外置，保留主路线、支路和热区。 标注回填到底图预留框，未叠加额外网格。,PASS
+telemetry-heatmap-matrix-writeback,YES,YES,YES,1672x941,1672x941,40px,5,in_artwork_callouts,12,热图与矩阵回写关系必须保持清楚，文字不覆盖热区。 标注回填到底图预留框，未叠加额外网格。,PASS
+genre-matrix-adaptation,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callouts,12,六类型卡片已经很密，说明作为外部图例。 标注回填到底图预留框，未叠加额外网格。,PASS
+level-design-pitfalls-correction-board,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callouts,6,诊断板含多个 before/after 案例，文字不放进案例格。 标注回填到底图预留框，未叠加额外网格。,PASS
+five-beat-blockout-exercise,YES,YES,YES,1672x941,1672x941,40px,6,in_artwork_callouts,19,练习工作表需要保留空白填写区，说明不能占用工作区。 标注回填到底图预留框，未叠加额外网格。,PASS
