@@ -1,3 +1,6 @@
 过程记录.md
 .DS_Store
 Thumbs.db
+
+# Legacy SVG drafts; public report uses image2 PNGs.
+assets/*.svg
