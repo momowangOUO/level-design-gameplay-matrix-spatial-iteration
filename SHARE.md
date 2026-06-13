@@ -19,7 +19,7 @@ GitHub: https://github.com/momowangOUO/level-design-gameplay-matrix-spatial-iter
 - 用 Metrics 把跳距、墙高、速度、技能半径先对齐。
 - 用 Gameplay Matrix 写清每段关卡到底在教什么、阻碍什么、奖励什么。
 - 用 Blockout 把矩阵假设落到空间里，再通过测试把失败原因写回来。
-- 用 CSV 模板让团队评审时先有共同语言，而不是只靠口头感觉。
+- 用 CSV 模板让团队评审时先用同一套说法，而不是只靠口头感觉。
 
 它更像一套关卡设计工作台，不是灵感合集。你可以把它当作灰盒前的检查表，也可以当作评审会上的翻译器：把模糊体验翻译成可讨论的设计变量。
 
