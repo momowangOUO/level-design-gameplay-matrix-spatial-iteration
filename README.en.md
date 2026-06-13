@@ -1,22 +1,26 @@
 # Game Level Design Toolkit: Gameplay Matrix, Metrics, Blockout, Spatial Iteration
 > Language / 语言：[中文](README.md) | English
 >
-> One-line pitch: turn "I think this level works" into a repeatable workflow you can draw, test, review, and improve.
+> Stop building levels by vibes alone. Vibes can start a sketch; they cannot settle a review.
 >
-> For: level designers, indie developers, technical designers, combat designers, and game-design students.
->
-> Reading value: this bilingual handbook includes 22 local diagrams, a Metrics / Gameplay Matrix / Blockout workflow, and an editable CSV template you can reuse in real projects.
+> This handbook turns level design into three production moves: align scale with Metrics, make skills and emotions visible with Gameplay Matrix, then test those assumptions through Blockout and writeback.
 >
 > Author: 魔魔王; version: v1.0; publication date: 2026-06-13.
 >
-> Reading entry: this page is the complete English edition; use [INDEX.en.md](INDEX.en.md) for the compact index.
 
-## Key Takeaways
+## The Short Version
 
 - Metrics come before blockout. If jump distance, wall height, speed, and ability radius do not share a scale, difficulty review turns into personal taste.
-- Gameplay Matrix is not spreadsheet decoration; it puts skill goals, player actions, obstacles, rewards, and intended emotion into one reviewable structure.
-- Blockout matters because it gives design assumptions to players, then sends failure reasons back into the matrix.
-- The CSV template can align a team during review, but production use still requires project-specific controller metrics and telemetry definitions.
+- Gameplay Matrix is not spreadsheet decoration; it turns "what does this segment teach?" into a reviewable team artifact.
+- Blockout matters because it exposes design assumptions to players, then sends failure reasons back into the matrix.
+- The CSV template can align review language, but production use still needs project-specific controller metrics and telemetry definitions.
+
+## How To Read This Report
+
+- Complete report: keep reading this page.
+- Compact index: [INDEX.en.md](INDEX.en.md).
+- Chinese edition: [README.md](README.md).
+- Asset boundary: diagrams, CSV material, and sources are collected near the end.
 
 Internal training document for beginners and intermediate level designers. The goal of this article is not to list nouns, but to teach designers to write "gameplay goals, player actions, obstacles, rewards, rhythm, difficulty, and emotions" into design tools that can be discussed, drawn, tested, and iterated.
 

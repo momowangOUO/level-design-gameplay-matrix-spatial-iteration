@@ -16,7 +16,7 @@ This repository contains one complete report. The README is the full GitHub-read
 
 This is a teaching document. It organizes workflow, vocabulary, matrix templates, and exercises. Diagrams explain scale and process; they are not measured production maps from a shipped game.
 
-## Reusable Lines
+## Quotable Lines
 
 - Metrics come before blockout; without a shared scale, difficulty review turns into personal taste.
 - Blockout matters because it gives design assumptions to players for testing.
