@@ -1,15 +1,11 @@
 # Game Level Design Toolkit：Gameplay Matrix、Metrics、Blockout 与空间迭代
 > 语言 / Language：中文 | [English](README.en.md)
 >
-> GitHub 阅读说明：本仓库保留完整中文版报告、完整英文版报告和全部本地图片资产；`过程记录.md` 仅作本地工作日志，已按要求排除，不会上传到 GitHub。
-
 > 一句话：把“凭感觉摆关卡”变成可画图、可测试、可复盘的关卡设计工具包。
 >
 > 适合谁：关卡设计师、独立游戏开发者、技术策划、战斗策划、游戏设计学生。
 >
 > 为什么值得 Star：这里有完整中英文教材、22 张本地示意图、Metrics / Gameplay Matrix / Blockout 工作流和可直接改用的 CSV 模板，适合长期当关卡设计速查手册。
->
-> 同系列： [三角洲行动地图拆解](https://github.com/momowangOUO/delta-force-map-system-reverse-study) / [生存本能与空间心理](https://github.com/momowangOUO/better-level-design-survival-instinct-space-psychology) / [搜打撤白皮书](https://github.com/momowangOUO/extraction-shooter-map-level-design-whitepaper) / [Eternal Return Lumia Island](https://github.com/momowangOUO/eternal-return-lumia-island-level-design-study)
 >
 > 想分享这份资料：可直接使用 [SHARE.md](SHARE.md) 里的中英文文案。
 
