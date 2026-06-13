@@ -1,13 +1,26 @@
 # Game Level Design Toolkit: Gameplay Matrix, Metrics, Blockout, Spatial Iteration
 > Language / 语言：[中文](README.md) | English
 >
-> One-line pitch: turn "I think this level works" into a repeatable workflow you can draw, test, review, and improve.
+> Stop building levels by vibes alone. Vibes can start a sketch; they cannot settle a review.
 >
-> For: level designers, indie developers, technical designers, combat designers, and game-design students.
+> This handbook turns level design into three production moves: align scale with Metrics, make skills and emotions visible with Gameplay Matrix, then test those assumptions through Blockout and writeback.
 >
-> Why star it: this bilingual handbook includes 22 local diagrams, a Metrics / Gameplay Matrix / Blockout workflow, and an editable CSV template you can reuse in real projects.
+> Author: 魔魔王; version: v1.0; publication date: 2026-06-13.
 >
-> Want to share it: use the ready-to-copy posts in [SHARE.md](SHARE.md).
+
+## The Short Version
+
+- Metrics come before blockout. If jump distance, wall height, speed, and ability radius do not share a scale, difficulty review turns into personal taste.
+- Gameplay Matrix is not spreadsheet decoration; it turns "what does this segment teach?" into a reviewable team artifact.
+- Blockout matters because it exposes design assumptions to players, then sends failure reasons back into the matrix.
+- The CSV template can align review language, but production use still needs project-specific controller metrics and telemetry definitions.
+
+## How To Read This Report
+
+- Complete report: keep reading this page.
+- Compact index: [INDEX.en.md](INDEX.en.md).
+- Chinese edition: [README.md](README.md).
+- Asset boundary: diagrams, CSV material, and sources are collected near the end.
 
 Internal training document for beginners and intermediate level designers. The goal of this article is not to list nouns, but to teach designers to write "gameplay goals, player actions, obstacles, rewards, rhythm, difficulty, and emotions" into design tools that can be discussed, drawn, tested, and iterated.
 
@@ -227,9 +240,9 @@ Suggested implementation rules:
 | 3 cells | verify | nervous | Players must master the take-off and landing points before using |
 | 4 cells or more | Mastery/Optional | challenge, sense of accomplishment | Use the main path with caution and must have clear notice and recycling |
 
-### Metrics image redraw specification
+### Metrics image redraw and review requirements
 
-If you continue to use image2 to generate similar images in the future, this information must be locked in the prompt word:
+When redrawing similar images later, lock the following information in the production brief and review checklist:
 
 - White background, clear black grid, no watermark, no logo.
 - All grids are of equal width and height, and players, pits, walls, and platforms must be aligned with the grid lines.
