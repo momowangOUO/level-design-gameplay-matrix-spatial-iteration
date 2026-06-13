@@ -11,7 +11,7 @@ This article focuses on three types of tools:
 - **Gameplay Matrix / teaching matrix**: Clarifies the core skill, player action, obstacle, reward, feedback, and intended emotion for each level segment.
 - **Blockout / Gray box diagram**: Drop each cell in the matrix onto the space and write it back through test data.
 
-Image description: The document uses local previewable PNG assets. The final English PNGs use high-density image2-generated base artwork with dedicated outer text panels, English titles and labels, reading-order notes, and a 40px reference grid. For grid spacing, jump distance, wall height, room volume, and skill radius, treat the written metrics, outer annotations, and reference grid as authoritative; the base artwork supplies representative examples and icon density, not random hard measurements.
+How to read the figures: the images are there to make the relationship between metrics, matrices, and blockouts easier to follow. Start with the figure title and arrow order, then return to the surrounding text to see which design question the figure is answering. Grids and icons give scale and examples; exact judgments about jump distance, wall height, room volume, or skill radius should follow the written metrics, figure annotations, and the notes at the end.
 
 ![Schematic diagram - overall structure of the textbook](assets/en/level-design-curriculum-overview.png)
 
@@ -597,3 +597,11 @@ Select the riskiest cell in the matrix and write:
 The value of level design tools is that they allow the team to clearly discuss the experience: what the player wants to learn, where to learn it, how to verify it, and how to fix it.
 
 When Metrics defines the scale, Gameplay Matrix defines the teaching sequence, Blockout carries the spatial relationship, and test write-back provides evidence, level design is no longer just "arranging content based on feeling", but becomes a set of professional methods that can be trained, reviewed, and iterated.
+
+## Sources And Image Notes
+
+This is a methodology textbook. Its main evidence comes from level design workflow, blockout review, playtest observation, and team review practice, rather than from a single game screenshot.
+
+All figures in the text use local previewable assets. They help readers understand the relationship between matrices, metrics, blockouts, and test write-back; they are not meant to be read as exact engineering drawings. For grid spacing, jump distance, wall height, room volume, enemy radius, or skill range, use the written metrics, in-figure labels, and the 40px reference grid.
+
+The repository also includes `关卡设计矩阵模板.csv`, which readers can adapt by replacing the core skill, obstacle, reward, spatial note, and test metric fields for their own projects.
