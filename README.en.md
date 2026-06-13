@@ -1,7 +1,17 @@
-# Basic level design textbook: Gameplay Matrix, Metrics and spatial iteration
+# Game Level Design Toolkit: Gameplay Matrix, Metrics, Blockout, Spatial Iteration
 > Language / 语言：[中文](README.md) | English
 >
 > GitHub Reading Notes: this repository keeps the complete Chinese report, the complete English report, and all local image assets. `过程记录.md` is a local work log only and is intentionally excluded from GitHub.
+
+> One-line pitch: turn "I think this level works" into a repeatable workflow you can draw, test, review, and improve.
+>
+> For: level designers, indie developers, technical designers, combat designers, and game-design students.
+>
+> Why star it: this bilingual handbook includes 22 local diagrams, a Metrics / Gameplay Matrix / Blockout workflow, and an editable CSV template you can reuse in real projects.
+>
+> Related repos: [Delta Force Map Study](https://github.com/momowangOUO/delta-force-map-system-reverse-study) / [Survival Instinct And Spatial Psychology](https://github.com/momowangOUO/better-level-design-survival-instinct-space-psychology) / [Extraction Shooter Whitepaper](https://github.com/momowangOUO/extraction-shooter-map-level-design-whitepaper) / [Eternal Return Lumia Island](https://github.com/momowangOUO/eternal-return-lumia-island-level-design-study)
+>
+> Want to share it: use the ready-to-copy posts in [SHARE.md](SHARE.md).
 
 Internal training document for beginners and intermediate level designers. The goal of this article is not to list nouns, but to teach designers to write "gameplay goals, player actions, obstacles, rewards, rhythm, difficulty, and emotions" into design tools that can be discussed, drawn, tested, and iterated.
 
