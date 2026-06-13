@@ -1,50 +1,58 @@
-# Share Kit / 推广文案
+# Share Kit / 可转发文案
 
 ## 中文短帖
 
-关卡评审最怕一句话：“我感觉这段不太对。”
+如果关卡评审只剩一句“我感觉这里不太对”，会议已经输了一半。
 
-所以我整理了一份关卡设计工具包，把 Metrics、Gameplay Matrix、Blockout、测试回写和 CSV 模板放到同一条工作流里。它不试图把设计变成公式，而是帮团队把“感觉”翻译成能画、能测、能复盘的讨论对象。
+我整理了一份关卡设计工具包，把 Metrics、Gameplay Matrix、Blockout、测试回写和 CSV 模板接成一条工作流。它不是把设计变成公式，而是把“难、乱、空、爽、不公平”这些模糊词翻译成团队能画、能测、能复盘的变量。
 
-适合正在做关卡、战斗、技术策划、独立游戏，或者想把关卡设计从灵感推进到方法的人。
+适合转给关卡、战斗、技术策划、独立开发者和正在搭建关卡评审流程的人。
 
 GitHub: https://github.com/momowangOUO/level-design-gameplay-matrix-spatial-iteration
 
 ## 中文长帖
 
-很多关卡讨论卡住，不是因为大家没有想法，而是因为每个人说的“难”“爽”“空”“乱”都不是同一个东西。
+关卡设计最难的不是有没有灵感，而是团队怎么讨论灵感。
 
-这份工具包试着解决这个问题：
+同一句“这里不爽”，在关卡、战斗、数值、美术和测试嘴里，可能指的是五种完全不同的问题。
 
-- 用 Metrics 把跳距、墙高、速度、技能半径先对齐。
-- 用 Gameplay Matrix 写清每段关卡到底在教什么、阻碍什么、奖励什么。
-- 用 Blockout 把矩阵假设落到空间里，再通过测试把失败原因写回来。
-- 用 CSV 模板让团队评审时先用同一套说法，而不是只靠口头感觉。
+这份工具包想解决的就是这个翻译问题：
 
-它更像一套关卡设计工作台，不是灵感合集。你可以把它当作灰盒前的检查表，也可以当作评审会上的翻译器：把模糊体验翻译成可讨论的设计变量。
+- Metrics 先把跳距、墙高、速度、技能半径对齐。
+- Gameplay Matrix 写清每段空间在教什么、挡什么、奖励什么。
+- Blockout 把矩阵假设变成能走进去测试的空间。
+- Playtest writeback 把失败原因写回表格，而不是散落在聊天记录里。
+- CSV 模板让评审会先有共同语言，再讨论创意。
+
+它更像一个关卡设计工作台：不是替你做判断，而是让判断有证据、有位置、有下一步。
 
 GitHub: https://github.com/momowangOUO/level-design-gameplay-matrix-spatial-iteration
 
 ## English Short Post
 
-The worst level-design review sentence is: "I feel like this part is off."
+If a level review ends at "this part feels off", the meeting has already lost half the battle.
 
-I made a bilingual level-design toolkit that connects Metrics, Gameplay Matrix, Blockout, playtest writeback, and an editable CSV template. The goal is not to turn design into a formula. It is to turn vague feelings into something a team can draw, test, review, and improve.
+I made a bilingual level-design toolkit connecting Metrics, Gameplay Matrix, Blockout, playtest writeback, and an editable CSV template. It turns vague words like hard, messy, empty, fun, and unfair into variables a team can draw, test, review, and improve.
+
+Useful for level designers, combat designers, technical designers, indie developers, and anyone building a clearer review process.
 
 GitHub: https://github.com/momowangOUO/level-design-gameplay-matrix-spatial-iteration
 
 ## English Long Post
 
-Level reviews often fail because everyone uses the same words differently: hard, fun, empty, messy, readable, unfair.
+The hard part of level design is not always having ideas. It is getting a team to discuss those ideas in the same language.
 
-This toolkit gives those words a workflow:
+When someone says "this area feels bad", they might mean flow, readability, combat distance, skill timing, reward pacing, or visual noise.
 
-- Metrics align jump distance, wall height, speed, and ability radius.
-- Gameplay Matrix makes each segment's skill goal, player action, obstacle, reward, and emotion visible.
-- Blockout turns those assumptions into space.
-- Playtest writeback sends the failure reasons back into the design sheet.
+This toolkit is built as a translation layer:
 
-It is a practical workbench for level designers, indie developers, combat designers, technical designers, and students who want to move from intuition to repeatable iteration.
+- Metrics align jump distance, wall height, movement speed, and ability radius.
+- Gameplay Matrix clarifies what each segment teaches, blocks, rewards, and makes the player feel.
+- Blockout turns those assumptions into testable space.
+- Playtest writeback sends failure reasons back into the sheet.
+- The CSV template gives reviews a shared structure before opinions take over.
+
+It is a practical workbench for moving level design from intuition into repeatable iteration.
 
 GitHub: https://github.com/momowangOUO/level-design-gameplay-matrix-spatial-iteration
 
