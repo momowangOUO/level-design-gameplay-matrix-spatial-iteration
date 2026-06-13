@@ -7,6 +7,8 @@
 >
 > Reading value: this bilingual handbook includes 22 local diagrams, a Metrics / Gameplay Matrix / Blockout workflow, and an editable CSV template you can reuse in real projects.
 >
+> Author: 魔魔王; version: v1.0; publication date: 2026-06-13.
+>
 > Reading entry: this page is the complete English edition; use [INDEX.en.md](INDEX.en.md) for the compact index.
 
 ## Key Takeaways
