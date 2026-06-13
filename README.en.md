@@ -5,9 +5,16 @@
 >
 > For: level designers, indie developers, technical designers, combat designers, and game-design students.
 >
-> Why star it: this bilingual handbook includes 22 local diagrams, a Metrics / Gameplay Matrix / Blockout workflow, and an editable CSV template you can reuse in real projects.
+> Reading value: this bilingual handbook includes 22 local diagrams, a Metrics / Gameplay Matrix / Blockout workflow, and an editable CSV template you can reuse in real projects.
 >
-> Want to share it: use the ready-to-copy posts in [SHARE.md](SHARE.md).
+> Reading entry: this page is the complete English edition; use [INDEX.en.md](INDEX.en.md) for the compact index.
+
+## Key Takeaways
+
+- Metrics come before blockout. If jump distance, wall height, speed, and ability radius do not share a scale, difficulty review turns into personal taste.
+- Gameplay Matrix is not spreadsheet decoration; it puts skill goals, player actions, obstacles, rewards, and intended emotion into one reviewable structure.
+- Blockout matters because it gives design assumptions to players, then sends failure reasons back into the matrix.
+- The CSV template can align a team during review, but production use still requires project-specific controller metrics and telemetry definitions.
 
 Internal training document for beginners and intermediate level designers. The goal of this article is not to list nouns, but to teach designers to write "gameplay goals, player actions, obstacles, rewards, rhythm, difficulty, and emotions" into design tools that can be discussed, drawn, tested, and iterated.
 
@@ -227,9 +234,9 @@ Suggested implementation rules:
 | 3 cells | verify | nervous | Players must master the take-off and landing points before using |
 | 4 cells or more | Mastery/Optional | challenge, sense of accomplishment | Use the main path with caution and must have clear notice and recycling |
 
-### Metrics image redraw specification
+### Metrics image redraw and review requirements
 
-If you continue to use image2 to generate similar images in the future, this information must be locked in the prompt word:
+When redrawing similar images later, lock the following information in the production brief and review checklist:
 
 - White background, clear black grid, no watermark, no logo.
 - All grids are of equal width and height, and players, pits, walls, and platforms must be aligned with the grid lines.
